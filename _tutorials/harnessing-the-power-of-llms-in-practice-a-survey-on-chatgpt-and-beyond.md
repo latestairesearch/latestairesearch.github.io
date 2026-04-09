@@ -2,6 +2,8 @@
 layout: default
 title: "Harnessing LLMs in Practice: Guide & Survey"
 description: "Learn how LLMs are used in practice across model choice, data, and downstream tasks, with a survey of real-world use cases and tradeoffs."
+tags: [llms, surveys]
+categories: [frontier-research, practical-guides]
 ---
 
 
