@@ -13,12 +13,14 @@ check_contains() {
   fi
 }
 
-check_contains "--global-theme-color: #b85c38;"
-check_contains "--global-hover-color: #8f4023;"
-check_contains "--global-highlight-color: #c96a43;"
-check_contains "--global-bg-color: #f6f1ea;"
-check_contains "--global-theme-color: #f2a65a;"
-check_contains "--global-hover-color: #ffbe7a;"
-check_contains "--global-bg-color: #1f252b;"
+check_contains "--global-theme-color: #2f6fec;"
+check_contains "--global-hover-color: #1f5ad1;"
+check_contains "--global-highlight-color: #4d8dff;"
+check_contains "--global-bg-color: #f3f7fc;"
+check_contains "--global-card-bg-color: #ffffff;"
+check_contains "--global-theme-color: #7db3ff;"
+check_contains "--global-hover-color: #a9cbff;"
+check_contains "--global-bg-color: #0f1722;"
+check_contains "--global-card-bg-color: #162130;"
 
-echo "PASS: theme palette matches the custom copper and slate scheme"
+echo "PASS: theme palette matches the paper blue scheme"
