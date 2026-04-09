@@ -29,8 +29,9 @@ pagination:
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
+        {% assign tag_slug = tag | slugify %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/tutorials/tag/' | relative_url }}">{{ tag }}</a>
+          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ '/tutorials/tag/' | append: tag_slug | append: '/' | relative_url }}">{{ tag }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -40,8 +41,9 @@ pagination:
         <p>&bull;</p>
       {% endif %}
       {% for category in site.display_categories %}
+        {% assign category_slug = category | slugify %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/tutorials/category/' | relative_url }}">{{ category }}</a>
+          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ '/tutorials/category/' | append: category_slug | append: '/' | relative_url }}">{{ category }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -149,7 +151,8 @@ pagination:
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/tutorials/tag/' | relative_url }}">
+            {% assign tag_slug = tag | slugify %}
+            <a href="{{ '/tutorials/tag/' | append: tag_slug | append: '/' | relative_url }}">
               <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
               {% unless forloop.last %}
                 &nbsp;
@@ -160,7 +163,8 @@ pagination:
           {% if categories != "" %}
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/tutorials/category/' | relative_url }}">
+            {% assign category_slug = category | slugify %}
+            <a href="{{ '/tutorials/category/' | append: category_slug | append: '/' | relative_url }}">
               <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
               {% unless forloop.last %}
                 &nbsp;
