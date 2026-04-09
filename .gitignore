@@ -1,0 +1,6 @@
+_site/*
+backup/*
+backup0829/*
+vendor/bundle/*
+.bundle/
+.env
