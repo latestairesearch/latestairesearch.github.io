@@ -14,6 +14,11 @@ grep -Fq 'actions/configure-pages' "$workflow" || {
   exit 1
 }
 
+grep -Fq "ruby-version: 3.1" "$workflow" || {
+  echo "FAIL: workflow must pin a Ruby version compatible with Gemfile.lock"
+  exit 1
+}
+
 grep -Fq 'bundle exec jekyll build' "$workflow" || {
   echo "FAIL: missing jekyll build step"
   exit 1
