@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond"
+title: "Harnessing LLMs in Practice: Guide & Survey"
+description: "Learn how LLMs are used in practice across model choice, data, and downstream tasks, with a survey of real-world use cases and tradeoffs."
 ---
 
 

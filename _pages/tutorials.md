@@ -2,6 +2,7 @@
 layout: default
 permalink: /
 title: Research
+description: "Learn frontier AI research through clear paper breakdowns, survey-driven explainers, and practical insights across LLMs, agents, reasoning, and benchmarks."
 nav: true
 nav_order: 1
 pagination:

@@ -10,9 +10,9 @@ contact_note: >
   Research-led explainers, surveys, and frontier AI briefings.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Research-led explainers and survey-style breakdowns of frontier AI papers, models, and techniques across LLMs, agents, reasoning, multimodal systems, and evaluation.
-home_title: Latest AI Research | Frontier Papers, Surveys, and Practical Breakdowns
+home_title: AI Research, Frontier Papers & Surveys | Latest AI Research
 home_description: >
-  Frontier AI paper explainers, survey articles, and practical research breakdowns covering LLMs, agents, reasoning, multimodal systems, benchmarks, and applied AI techniques.
+  Learn frontier AI research through clear paper breakdowns, survey-driven explainers, and practical insights across LLMs, agents, reasoning, and benchmarks.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
