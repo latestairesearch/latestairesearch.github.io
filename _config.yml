@@ -79,8 +79,8 @@ pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
 google_site_verification:
-enable_bing_verification: false
-bing_site_verification:
+enable_bing_verification: true
+bing_site_verification: FC670854123D4478EC382A01882CE6C9
 
 # -----------------------------------------------------------------------------
 # Blog
