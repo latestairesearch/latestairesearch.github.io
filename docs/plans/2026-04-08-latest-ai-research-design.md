@@ -2,7 +2,7 @@
 
 ## Goal
 
-Bootstrap `latestairesearch.github.io` using the visual and content structure of the reference site at `/Users/krystal/Documents/Playground/aicatnews.github.io`, while keeping the new repo lightweight and easy to rebrand later.
+Bootstrap `agentspulse.github.io` using the visual and content structure of the reference site at `/Users/krystal/Documents/Playground/aicatnews.github.io`, while keeping the new repo lightweight and easy to rebrand later.
 
 ## Scope
 
