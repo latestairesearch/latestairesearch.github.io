@@ -93,13 +93,13 @@ replica_variant: replica-sky
 <section class="sky-about-contact" aria-labelledby="about-contact">
 <div>
 <h2 id="about-contact">Corrections and contact</h2>
-<p>Questions, source corrections, and reproducible evidence are welcome. AgentsPulse currently uses ADRS community channels for discussion and issue tracking.</p>
+<p>Questions, source corrections, and reproducible evidence are welcome. Use the channels below to follow AgentsPulse or report an issue.</p>
 </div>
 <div class="sky-about-contact-links" aria-label="Contact AgentsPulse">
-<a href="https://github.com/UCB-ADRS/ADRS/issues" target="_blank" rel="noopener noreferrer">GitHub issues <span aria-hidden="true">↗</span></a>
-<a href="https://x.com/ai4research_ucb" target="_blank" rel="noopener noreferrer">X <span aria-hidden="true">↗</span></a>
-<a href="https://www.linkedin.com/company/ucb-adrs" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-<a href="https://join.slack.com/t/adrs-global/shared_invite/zt-3fgme22n5-PKYyAc9aIeTyX5iSQTKIoA" target="_blank" rel="noopener noreferrer">Slack <span aria-hidden="true">↗</span></a>
+<a href="https://github.com/agentspulse/agentspulse.github.io/issues" target="_blank" rel="noopener noreferrer">GitHub issues <span aria-hidden="true">↗</span></a>
+<a href="https://x.com/ai_cat_news" target="_blank" rel="noopener noreferrer">X <span aria-hidden="true">↗</span></a>
+<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+<a href="https://slack.com/" target="_blank" rel="noopener noreferrer">Slack <span aria-hidden="true">↗</span></a>
 </div>
 </section>
 </div>
