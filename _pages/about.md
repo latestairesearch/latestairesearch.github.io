@@ -1,8 +1,10 @@
 ---
 layout: design-replica
 permalink: /about/
-title: "About · AgentsPulse"
-description: "About the AgentsPulse digest."
+title: "About AgentsPulse"
+seo_title: "About AgentsPulse"
+description: "Learn how AgentsPulse selects, reviews, and explains AI agent research, including its editorial process, coverage, sources, and correction standards."
+lang: en
 replica_variant: replica-sky
 ---
 
@@ -13,37 +15,55 @@ replica_variant: replica-sky
 <header class="sky-header">
 <div class="sky-header-row">
 <div class="sky-header-copy">
-<h1>About</h1>
-<p class="sky-sub">What AgentsPulse is and how the digest is built.</p>
+<h1>About AgentsPulse</h1>
+<p class="sky-sub">How we select, review, and explain AI agent research.</p>
 </div>
 </div>
 </header>
 
 <div class="sky-about">
 <section class="sky-about-block">
-<h2>Mission</h2>
-<p>AgentsPulse turns dense frontier-AI papers into readable, structured digests. We track surveys and primary work across large language models, security, reasoning, and training methods, then distill each into an accessible breakdown so practitioners can keep up without reading every preprint end to end.</p>
+<h2>What AgentsPulse is</h2>
+<p>AgentsPulse is a research digest focused on AI agents. We turn dense primary papers and surveys into clear, structured reviews for researchers, engineers, and practitioners who want to understand how agent systems are changing without relying on headlines or reading every preprint end to end.</p>
 </section>
 
 <section class="sky-about-block">
-<h2>How it works</h2>
-<p>Each entry pairs a short editorial summary with the figures and tags that matter. Posts are searchable and filterable by topic, and every digest links back to the source paper so you can go deeper whenever a result is relevant to your work.</p>
-</section>
-
-<section class="sky-about-block">
-<h2>Coverage</h2>
-<div class="sky-about-tags">
-<span>LLMs</span>
-<span>Security</span>
-<span>Surveys</span>
-<span>Mid-training</span>
-<span>Reasoning</span>
+<h2>What we cover</h2>
+<p>Our coverage follows the research questions that shape capable and dependable agents: reasoning and planning, tool use, memory, multi-agent systems, self-improvement, evaluation, safety, and the model and harness architectures behind agent behavior.</p>
+<div class="sky-about-tags" aria-label="AgentsPulse coverage areas">
+<span>Agent architectures</span>
+<span>Reasoning &amp; planning</span>
+<span>Tool use</span>
+<span>Memory</span>
+<span>Self-evolution</span>
+<span>Evaluation</span>
+<span>Safety</span>
 </div>
 </section>
 
 <section class="sky-about-block">
-<h2>Contact</h2>
-<p>Follow along through the links in the header for updates as new digests are published.</p>
+<h2>How we work</h2>
+<ul>
+<li><strong>Select:</strong> We prioritize work that introduces a meaningful method, clarifies an emerging research direction, or provides evidence with practical implications for agent builders.</li>
+<li><strong>Read:</strong> We examine the original paper, its stated assumptions, experiments, limitations, and supporting figures rather than summarizing secondary coverage.</li>
+<li><strong>Explain:</strong> We organize each review around the research question, mechanism, evidence, and boundaries so readers can distinguish demonstrated results from interpretation.</li>
+<li><strong>Source:</strong> Reviews link directly to the papers discussed. Figures retain descriptive captions and source context so readers can verify the underlying work.</li>
+</ul>
+</section>
+
+<section class="sky-about-block">
+<h2>Editorial responsibility</h2>
+<p>Reviews are published by the AgentsPulse editorial team. We aim to preserve the authors' claims accurately, identify important limitations, and avoid presenting inference as experimental fact. When a source changes or a material error is found, we update the review rather than leaving a known mistake in place.</p>
+</section>
+
+<section class="sky-about-block">
+<h2>Corrections and contact</h2>
+<p>Questions, source corrections, and reproducible evidence are welcome. Open an issue in the <a href="https://github.com/UCB-ADRS/ADRS/issues" target="_blank" rel="noopener noreferrer">ADRS GitHub repository</a>, or reach the community through <a href="https://x.com/ai4research_ucb" target="_blank" rel="noopener noreferrer">X</a>, <a href="https://www.linkedin.com/company/ucb-adrs" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or <a href="https://join.slack.com/t/adrs-global/shared_invite/zt-3fgme22n5-PKYyAc9aIeTyX5iSQTKIoA" target="_blank" rel="noopener noreferrer">Slack</a>.</p>
+</section>
+
+<section class="sky-about-block">
+<h2>Start with our latest review</h2>
+<p>Read <a href="{{ '/tutorials/self-evolving-agents-review-en/' | relative_url }}">Self-Evolving Agents: Model, Harness, and Artifact Evolution</a>, a structured review of eight papers on how agents improve their outputs, harnesses, and model weights.</p>
 </section>
 </div>
 

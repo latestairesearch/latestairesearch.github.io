@@ -23,6 +23,23 @@ check_contains "_site/index.html" "<html lang=\"en\">"
 check_contains "_site/index.html" "<h1>AI Agent Research Papers and Surveys</h1>"
 check_contains "_site/index.html" "AI Agent Research Digest"
 check_contains "_site/index.html" "Search agent research..."
+if grep -Fq 'href="/blog/"' "_site/index.html"; then
+  echo "FAIL: retired Blog page remains in homepage navigation"
+  exit 1
+fi
+
+if [[ -e "_site/blog/index.html" ]]; then
+  echo "FAIL: retired Blog page should not be generated"
+  exit 1
+fi
+
+check_contains "_site/about/index.html" "<title>About AgentsPulse | AgentsPulse</title>"
+check_contains "_site/about/index.html" "<html lang=\"en\">"
+check_contains "_site/about/index.html" "<h1>About AgentsPulse</h1>"
+check_contains "_site/about/index.html" "How we work"
+check_contains "_site/about/index.html" "Editorial responsibility"
+check_contains "_site/about/index.html" "Corrections and contact"
+check_contains "_site/about/index.html" '"@type": "Organization"'
 check_contains "_site/404.html" "<title>Page Not Found | AgentsPulse</title>"
 check_contains "_site/404.html" "<meta name=\"description\" content=\"Return to AgentsPulse to explore frontier AI papers, surveys, and practical explainers across LLMs, agents, reasoning, and benchmarks.\""
 
@@ -45,5 +62,20 @@ if [[ -e "_site/tutorials/self-evolving-agents-review-zh/index.html" ]]; then
   echo "FAIL: Chinese paper should not be published"
   exit 1
 fi
+
+python3 - <<'PY'
+import xml.etree.ElementTree as ET
+
+root = ET.parse("_site/sitemap.xml").getroot()
+namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+urls = [node.text for node in root.findall("sm:url/sm:loc", namespace)]
+expected = {
+    "https://agentspulse.github.io/",
+    "https://agentspulse.github.io/about/",
+    "https://agentspulse.github.io/tutorials/self-evolving-agents-review-en/",
+}
+if set(urls) != expected or len(urls) != len(expected):
+    raise SystemExit(f"FAIL: sitemap URLs differ from expected canonical set: {urls}")
+PY
 
 echo "PASS: SEO metadata matches expected homepage and article values"

@@ -261,6 +261,25 @@
   </script>
 {% endif %}
 
+{% if page_url == '/about/' or page_url == '/about/index.html' %}
+  <!-- Organization identity for the About page -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": {{ site.url | append: '/#organization' | jsonify }},
+      "name": {{ site_title | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "description": {{ site.description | strip | normalize_whitespace | jsonify }},
+      "sameAs": [
+        "https://x.com/ai4research_ucb",
+        "https://www.linkedin.com/company/ucb-adrs",
+        "https://github.com/UCB-ADRS/ADRS"
+      ]
+    }
+  </script>
+{% endif %}
+
 {% if site.serve_schema_org %}
   <!-- Schema.org -->
   {% comment %} Social links generator for "sameAs schema" {% endcomment %}

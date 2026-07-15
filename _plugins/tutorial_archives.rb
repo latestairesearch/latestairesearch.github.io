@@ -17,6 +17,7 @@ module Jekyll
         'type' => archive_type,
         'collection_name' => 'tutorials',
         'documents' => documents.sort_by { |doc| doc.date || Time.at(0) }.reverse,
+        'sitemap' => false,
         'seo_title' => archive_type == 'tags' ? "#{archive_value} AI Tag" : "#{archive_value} AI Category",
         'description' => archive_type == 'tags' ?
           "Browse tutorial articles tagged #{archive_value} on AgentsPulse, including frontier AI papers, surveys, and practical explainers." :
